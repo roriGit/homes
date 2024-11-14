@@ -1,0 +1,11 @@
+<div class="bg-green-500 rounded-lg each-house border-sky-500">
+    <ul>
+        <li><img class="rounded-t-lg" src="/images/{{houseInfo.image}}" alt=""></li>
+        <li class="px-4 pt-2 pb-3 mt-2 rounded">
+            <h3 class="text-lg font-bold bold">{{houseInfo.title}}</h3>
+            <p>{{houseInfo.address}}</p>
+            <p><a class="" [routerLink]="['/details', houseInfo.id]" >Readmore</a></p>
+        </li>
+    </ul>
+    
+</div>

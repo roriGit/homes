@@ -1,0 +1,9 @@
+<div class="grid ">
+    <div class="">
+        <input class="px-2 py-1 my-3 mr-1 border border-green-500 rounded-md focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500" [(ngModel)]="searchHouses" placeholder="Search for house." name="searchHouses" type="search" />
+        <button class="px-5 py-1 bg-green-500 border border-green-500 rounded-md hover:bg-green-600" type="button" (click)="searchHouse()">Search</button>
+    </div>
+    <div class="grid gap-4 md:grid-cols-3 sm:grid-cols-1">
+        <app-house *ngFor="let house of houses" [houseInfo]="house"></app-house>
+    </div>
+</div>
